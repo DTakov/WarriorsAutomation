@@ -29,11 +29,6 @@ namespace Summator
             {
                 Console.WriteLine("Test SumTwoNumbers Pass!");
             }
-                 
-
         }
-
-
-
     }
 }

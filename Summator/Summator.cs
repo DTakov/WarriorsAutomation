@@ -11,9 +11,9 @@ namespace Summator
         public static int Sum(int[] arr)
         { 
 
-        int sum = arr[0];
+        int sum = 0;
 
-        for ( int i = 1; i < arr.Length; i++)
+        for ( int i = 0; i < arr.Length; i++)
             {
                 sum += arr[i];
             }

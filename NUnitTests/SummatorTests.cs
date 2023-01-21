@@ -14,7 +14,7 @@ namespace Summator.UnitTests
 
             var expected = 3;
 
-            Assert.AreEqual(expected, actual);
+            Assert.That(actual, Is.EqualTo(expected));
         }
 
         [Test]
@@ -26,7 +26,7 @@ namespace Summator.UnitTests
 
             var expected = -100;
 
-            Assert.AreEqual(expected, actual);
+            Assert.That(actual, Is.EqualTo(expected));
         }
 
         [Test]
@@ -38,7 +38,7 @@ namespace Summator.UnitTests
 
             var expected = 6;
 
-            Assert.AreEqual(expected, actual);
+            Assert.That(actual, Is.EqualTo(expected));
         }
 
 
@@ -51,10 +51,7 @@ namespace Summator.UnitTests
 
             var expected = 0;
 
-            Assert.AreEqual(expected, actual);
+            Assert.That(actual, Is.EqualTo(expected));
         }
-
-
     }
 }
-

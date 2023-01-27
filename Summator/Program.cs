@@ -6,8 +6,19 @@
         {
             var numbers = new int[] { 5, 6, 15 };
 
-            Console.WriteLine("Summata e ravna na: " + Summator.Sum(numbers));
-            Console.WriteLine($"Srednata stoinost na chislata: {numbers[0]}, {numbers[1]}, {numbers[2]} e {Summator.Average(numbers)}");
+            Console.WriteLine("The sum is equal to: " + Summator.Sum(numbers));
+
+            Console.WriteLine($"The avarage value of the numbers : " +
+                $"{numbers[0]}, " +
+                $"{numbers[1]}, " +
+                $"{numbers[2]} is " +
+                $"{Summator.Average(numbers)}");
+
+            Console.WriteLine($"The deduction of 15 from the following numbers sum : " +
+                $"{numbers[0]}, " +
+                $"{numbers[1]}, " +
+                $"{numbers[2]} is " +
+                $" {Summator.DeductFromSum(numbers, 15)}");
         }
     }
 }

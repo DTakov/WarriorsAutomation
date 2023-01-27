@@ -1,4 +1,4 @@
-﻿namespace Summator
+﻿namespace Services
 {
     internal class Program
     {

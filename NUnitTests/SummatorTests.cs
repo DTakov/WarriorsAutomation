@@ -1,7 +1,7 @@
 using NUnit.Framework;
 
 
-namespace Summator.UnitTests
+namespace Services.UnitTests
 {
     public class SummatorTests
     {

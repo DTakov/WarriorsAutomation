@@ -53,5 +53,29 @@ namespace Services.UnitTests
 
             Assert.That(actual, Is.EqualTo(expected));
         }
+
+        [Test]
+        public void Test_Even_Number()
+        {
+
+            var num = 10;
+            var actual = Summator.EvenOddnumbers(num);
+
+            var expected = num.ToString() + " is even!";
+
+            Assert.That(actual, Is.EqualTo(expected));
+        }
+
+        [Test]
+        public void Test_Odd_Number()
+        {
+
+            var num = 9;
+            var actual = Summator.EvenOddnumbers(num);
+
+            var expected = num.ToString() + " is odd!";
+
+            Assert.That(actual, Is.EqualTo(expected));
+        }
     }
 }

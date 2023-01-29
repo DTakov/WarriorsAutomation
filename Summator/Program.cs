@@ -19,6 +19,8 @@
                 $"{numbers[1]}, " +
                 $"{numbers[2]} is " +
                 $" {Summator.DeductFromSum(numbers, 15)}");
+
+            Console.WriteLine(Summator.EvenOddnumbers(9));
         }
     }
 }

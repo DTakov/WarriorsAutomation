@@ -40,5 +40,19 @@ namespace Services
             }
             return sum - deductAmount;
         }
+        public static string EvenOddnumbers(int num)
+        {
+            string oddOrEven = "";
+           if(num % 2 == 0)
+            {
+             oddOrEven = num.ToString() + " is even!";
+            }
+            else
+            {
+                oddOrEven = num.ToString() + " is odd!";
+            }
+            return oddOrEven;
+        }
+
     }
 }

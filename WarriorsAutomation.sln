@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount.UnitTests", "Ba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collection.UnitTests", "Collections.UnitTests\Collection.UnitTests.csproj", "{DAACBAB4-2599-46B0-82F0-CF3A908D8A94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubTesting", "ResharpAPI\GithubTesting.csproj", "{7A9BAB76-5C3D-4148-A0AC-002D2C9888AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationTests", "IntegrationTests", "{29F9D616-E797-4630-83A8-CEF597AFC75E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,10 @@ Global
 		{DAACBAB4-2599-46B0-82F0-CF3A908D8A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAACBAB4-2599-46B0-82F0-CF3A908D8A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAACBAB4-2599-46B0-82F0-CF3A908D8A94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A9BAB76-5C3D-4148-A0AC-002D2C9888AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A9BAB76-5C3D-4148-A0AC-002D2C9888AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A9BAB76-5C3D-4148-A0AC-002D2C9888AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A9BAB76-5C3D-4148-A0AC-002D2C9888AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{5069E92F-DA65-4CF5-93E2-AD7FFA798F5D} = {F51F6039-523C-47DD-B064-9234E162F16F}
 		{A5D7A45B-3A10-488A-A339-F32A3A842E8B} = {F51F6039-523C-47DD-B064-9234E162F16F}
 		{DAACBAB4-2599-46B0-82F0-CF3A908D8A94} = {F51F6039-523C-47DD-B064-9234E162F16F}
+		{7A9BAB76-5C3D-4148-A0AC-002D2C9888AC} = {29F9D616-E797-4630-83A8-CEF597AFC75E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0C0A9088-E3F2-476E-899E-644133884924}

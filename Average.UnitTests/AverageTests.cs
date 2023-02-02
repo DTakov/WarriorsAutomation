@@ -4,26 +4,12 @@ namespace Services.UnitTests
 {
     public class AverageTests
     {
-        [Test]
-        public void Test_Average_TwoPositiveNumbers()
+        [TestCase(new[] { 10, 20 }, 15)]
+        [TestCase(new[] { 5, 17, 20 }, 14)]
+        [TestCase(new[] { -5, -15, -25 }, -15)]
+        public void Test_Average_TwoPositiveNumbers(int [] numbers, int expected)
         {
-            var nums = new int[] { 10, 20 };
-            Assert.That(Summator.Average(nums), Is.EqualTo(15));
-        }
-
-        [Test]
-        public void Test_Average_ThreePositiveNumbers()
-        {
-            var nums = new int[] { 5, 17, 20 };
-            Assert.That(Summator.Average(nums), Is.EqualTo(14));
-        }
-
-        [Test]
-        public void Test_Average_ThreeNegativeNumbers()
-        {
-            var nums = new int[] { -5, -15, -25 };
-            Assert.That(Summator.Average(nums), Is.EqualTo(-15));
+            Assert.That(Summator.Average(numbers), Is.EqualTo(expected));
         }
     }
-
 }

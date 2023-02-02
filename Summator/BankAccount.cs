@@ -26,10 +26,17 @@ namespace Services
 
         public BankAccount(double balance)
         {
-            this.balance = balance;
+            if (balance < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(balance));
+            }
+            else
+            {
+                this.balance = balance;
+            }
         }
 
-        public void Add(double amount)
+        public double Add(double amount)
         {
             if (amount < 0)
             {
@@ -37,7 +44,7 @@ namespace Services
             }
             else
             {
-                balance += amount;
+                return balance += amount;
             }
         }
 

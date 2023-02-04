@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
 
     <IsPackable>false</IsPackable>
-    <AssemblyName>Collections.UnitTests</AssemblyName>
+    <AssemblyName>ResharpAPI</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,9 +19,14 @@
     <PackageReference Include="coverlet.collector" Version="3.2.0"><IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 <PrivateAssets>all</PrivateAssets>
 </PackageReference>
+    <PackageReference Include="RestSharp" Version="108.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Summator\Services.csproj" />
+    <None Remove="RestSharp" />
+    <None Remove="Tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tests\" />
   </ItemGroup>
 </Project>

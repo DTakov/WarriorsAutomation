@@ -32,7 +32,7 @@ namespace GithubTesting
         public int number { get; set; }
         public string title { get; set; }
         public User user { get; set; }
-        public List<object> labels { get; set; }
+        public List<Labels> labels { get; set; }
         public string state { get; set; }
         public bool locked { get; set; }
         public object assignee { get; set; }
@@ -72,5 +72,14 @@ namespace GithubTesting
         public string received_events_url { get; set; }
         public string type { get; set; }
         public bool site_admin { get; set; }
+    }
+    public class Labels
+    {
+        public long id { get; set; }
+        public string name { get; set; }
+        public string description { get; set; }
+        public string color { get; set; }
+
+
     }
 }

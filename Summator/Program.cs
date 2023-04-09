@@ -21,6 +21,7 @@
                 $" {Summator.DeductFromSum(numbers, 15)}");
 
             Console.WriteLine(Summator.EvenOddnumbers(9));
+            //Testing
         }
     }
 }
